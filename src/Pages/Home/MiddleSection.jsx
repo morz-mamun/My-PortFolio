@@ -51,7 +51,7 @@ const MiddleSection = () => {
               <p className="text-[#a1a0a0 uppercase">Stay With Me</p>
               <p className="font-bold text-2xl">Profile</p>
               <div className="flex justify-end">
-              <Link to={"/contact"}>
+              <Link to={"/about"}>
                 <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-red-600"></FaArrowRightFromBracket>
               </Link>
             </div>

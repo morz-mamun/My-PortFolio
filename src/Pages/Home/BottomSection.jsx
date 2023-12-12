@@ -24,7 +24,7 @@ const BottomSection = () => {
                 <LuArrowDownFromLine className="text-3xl mb-5 text-warning"></LuArrowDownFromLine>
                 <h1 className="text-5xl font-bold">Lets Work <span className="text-warning">Together.</span></h1>
                 <div className="flex justify-end">
-              <Link to={"/about"}>
+              <Link to={"/contact"}>
                 <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-red-600"></FaArrowRightFromBracket>
               </Link>
             </div>

@@ -13,7 +13,7 @@ const Contact = () => {
         console.log(email, subject, name, massage);
     }
   return (
-    <div className="flex flex-col md:flex-row gap-5 px-5 my-8">
+    <div className="flex flex-col md:flex-row gap-5 px-5 my-12">
       <div className="md:w-1/3">
         <div className="space-y-5">
           <h1 className="uppercase font-bold text-2xl">Contact Info</h1>

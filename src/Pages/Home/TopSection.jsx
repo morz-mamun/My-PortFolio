@@ -71,7 +71,7 @@ const TopSection = () => {
                 Projects
               </p>
               <div className="flex justify-end">
-                <Link to={"/about"}>
+                <Link to={"/myWork"}>
                   <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-red-600"></FaArrowRightFromBracket>
                 </Link>
               </div>
