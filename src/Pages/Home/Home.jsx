@@ -1,3 +1,4 @@
+import BottomSection from "./BottomSection";
 import MiddleSection from "./MiddleSection";
 import TopSection from "./TopSection";
 
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <TopSection></TopSection>
       <MiddleSection></MiddleSection>
+      <BottomSection></BottomSection>
     </div>
   );
 };
