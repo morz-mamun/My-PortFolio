@@ -11,8 +11,9 @@ const TopSection = () => {
     <div className="flex flex-col md:flex-row gap-10 px-5 mt-16">
       <div className="md:w-1/2 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl">
       <div className="flex flex-col md:flex-row gap-2 lg:gap-10 ">
-        <figure className="md:w-1/2 flex justify-center">
-          <img className="h-52 rounded-xl shadow-2xl" src={bg} alt="Shoes" />
+        <figure className="md:w-1/2 flex justify-center ">
+          <img className="h-52 rounded-xl shadow-2xl bg-gradient-to-r from-slate-600  via-slate-200
+                 to-slate-600 ..." src={bg} alt="Shoes" />
         </figure>
         <div className="space-y-3 md:w-1/2">
           <p className="text-[#a1a0a0] uppercase">Web Developer</p>
