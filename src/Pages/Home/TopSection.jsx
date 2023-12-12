@@ -4,18 +4,9 @@ import bg from "../../assets/bg.png";
 import signature from "../../assets/sig.png";
 import project from "../../assets/sig1.png";
 import { Link } from "react-router-dom";
-// import resume from '../../assets/MorzResume'
+
 
 const TopSection = () => {
-  // const handleDownloadPdf = () => {
-  //   const pdfUrl = 'https://drive.google.com/drive/folders/1beCqTS0sSkrebhSUm3cl69qmFHQijdVL?usp=sharing'
-  //   const link = document.createElement('a')
-  //   link.href = pdfUrl
-  //   link.download = 'MorzResume.pdf'
-  //   document.body.appendChild(link)
-  //   link.click()
-  //   document.body.removeChild(link)
-  // }
   return (
     <div className="flex flex-col md:flex-row gap-10 px-5 mt-16">
       <div className="md:w-1/2 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl">
