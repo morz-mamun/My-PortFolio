@@ -1,16 +1,39 @@
+import emailjs from "@emailjs/browser";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import Swal from "sweetalert2";
 
 
 const Contact = () => {
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+
     const handleSubmit = (e) => {
         e.preventDefault()
         const form = e.target
-        const name = form.name.value
-        const email = form.email.value
-        const subject = form.subject.value
-        const massage = form.massage.value
-        console.log(email, subject, name, massage);
+        emailjs.sendForm("service_8pcv9n5", "template_nh7kma5", form, "kFrB08mXntYRm3Yl5")
+        .then(() => {
+          Toast.fire({
+            icon: 'success',
+            title: 'Email Send successfully'
+          })
+        }, () => {
+          Toast.fire({
+            icon: 'error',
+            title: 'Something wrong!'
+          })
+        })
+        form.reset()
     }
   return (
     <div className="flex flex-col md:flex-row gap-5 px-5 my-12">
@@ -81,7 +104,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="w-full text-white">
-                <form onSubmit={handleSubmit} className="">
+                <form onSubmit={handleSubmit}>
                   <div className="form-control">
                     <label className="label">
                       <span className="text-white font-bold">Name</span>
@@ -124,8 +147,8 @@ const Contact = () => {
                     </label>
                     <textarea
                       type="text"
-                      name="massage"
-                      placeholder="Your Massage*"
+                      name="message"
+                      placeholder="Your Message*"
                       className=" text-black input input-bordered w-full"
                       required
                     />
