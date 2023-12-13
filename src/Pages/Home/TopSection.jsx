@@ -10,29 +10,36 @@ const TopSection = () => {
   return (
     <div className="flex flex-col md:flex-row gap-10 px-5 mt-16">
       <div className="md:w-1/2 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl">
-      <div className="flex flex-col md:flex-row gap-2 lg:gap-10 ">
-        <figure className="md:w-1/2 flex justify-center ">
-          <img className="h-52 rounded-xl shadow-2xl bg-gradient-to-r from-slate-600  via-slate-200
-                 to-slate-600 ..." src={bg} alt="Shoes" />
-        </figure>
-        <div className="space-y-3 md:w-1/2">
-          <p className="text-[#a1a0a0] uppercase">Web Developer</p>
-          <h2 className="uppercase font-bold md:text-3xl">
-            Md Morshed <br /> Alam
-          </h2>
-          <p className="text-[#a1a0a0]">
-            Junior MERN Stack Developer{" "}
-            <span className="text-warning font-bold">|| </span>Strong in
-            Frontend. <span className="text-warning font-bold">|| </span>{" "}
-            Passionate about creating seamless web experiences with React.js,
-            Node.js, Express.js and MongoDB.
-          </p>
+        <div className="flex flex-col md:flex-row gap-2 lg:gap-10 ">
+          <figure className="md:w-1/2 flex justify-center ">
+            <img
+              className="h-52 rounded-xl shadow-2xl bg-gradient-to-r from-slate-600  via-slate-200
+                 to-slate-600 ..."
+              src={bg}
+              alt="Shoes"
+            />
+          </figure>
+          <div className="space-y-3 md:w-1/2">
+            <p className="text-[#a1a0a0] uppercase">Web Developer</p>
+            <h2 className="uppercase font-bold md:text-3xl">
+              Md Morshed <br /> Alam
+            </h2>
+            <p className="text-[#a1a0a0]">
+              Junior MERN Stack Developer{" "}
+              <span className="text-warning font-bold">|| </span>Strong in
+              Frontend. <span className="text-warning font-bold">|| </span>{" "}
+              Passionate about creating seamless web experiences with React.js,
+              Node.js, Express.js and MongoDB.
+            </p>
+          </div>
         </div>
-      </div>
-      <Link to="/files/MorzResume.pdf" target="_blank" download><button className="text-warning font-bold text-lg btn btn-outline hover:border-red-600 hover:bg-white hover:text-black">Resume📤</button></Link>
-      
+        <a href="https://drive.google.com/uc?export=download&id=16YrkBlHZZRajwkfho8kQyXJi37kFaJnJ" download="MorzResume.pdf"><button className="text-warning font-bold text-lg btn btn-outline hover:border-red-600 hover:bg-white hover:text-black">
+            Resume📤
+          </button></a>
       </div>
 
+      
+     
       {/* right side */}
 
       <div className="md:w-1/2">
@@ -43,7 +50,7 @@ const TopSection = () => {
             *
           </Marquee>
         </div>
-        
+
         <div className="flex flex-col md:flex-row gap-5">
           <div className="flex flex-col gap-7 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl">
             <div className="flex-grow">
@@ -54,13 +61,12 @@ const TopSection = () => {
               <p className="text-xl lg:text-2xl font-bold uppercase">
                 Credentials
               </p>
-               <div className="flex justify-end">
-              <Link to={"/about"}>
-                <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-red-600"></FaArrowRightFromBracket>
-              </Link>
+              <div className="flex justify-end">
+                <Link to={"/about"}>
+                  <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-red-600"></FaArrowRightFromBracket>
+                </Link>
+              </div>
             </div>
-            </div>
-           
           </div>
           <div className="flex flex-col gap-7 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl">
             <div className="">
