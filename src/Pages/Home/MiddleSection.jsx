@@ -44,12 +44,13 @@ const MiddleSection = () => {
           </div>
           <div className="flex justify-end">
             <Link to={"/about"}>
-              <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-red-600"></FaArrowRightFromBracket>
+              <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-warning"></FaArrowRightFromBracket>
             </Link>
           </div>
         </figure>
       </div>
 
+        {/* right side */}
       <div  data-aos="zoom-in"
         data-aos-offset="300"
         data-aos-duration="1500" className="md:w-1/4 flex flex-col gap-8 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl">
@@ -58,7 +59,7 @@ const MiddleSection = () => {
         <p className="font-bold text-2xl">Profile</p>
         <div className="flex justify-end">
           <Link to={"/about"}>
-            <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-red-600"></FaArrowRightFromBracket>
+            <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-warning"></FaArrowRightFromBracket>
           </Link>
         </div>
       </div>

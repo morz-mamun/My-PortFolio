@@ -15,44 +15,59 @@ const TopSection = () => {
         className="md:w-1/2 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl"
       >
         <div className="flex flex-col md:flex-row gap-2 lg:gap-10 ">
-          <figure className="md:w-1/2 flex justify-center ">
+          <figure className="md:w-1/2 flex flex-col justify-center items-center">
             <img
-              className="h-52 rounded-xl shadow-2xl bg-gradient-to-r from-slate-600  via-slate-200
+              className="h-52 md:w-fit rounded-xl shadow-2xl bg-gradient-to-r from-slate-600  via-slate-200
                  to-slate-600 ..."
               src={bg}
               alt="Shoes"
             />
+            <div className="mt-6 hidden md:block">
+              <a
+                href="https://drive.google.com/uc?export=download&id=16YrkBlHZZRajwkfho8kQyXJi37kFaJnJ"
+                download="MorzResume.pdf"
+              >
+                <button className="text-warning font-bold text-lg btn btn-outline hover:border-red-600 hover:bg-white hover:text-black">
+                  Resume📤
+                </button>
+              </a>
+            </div>
           </figure>
-          <div className="space-y-3 md:w-1/2">
+          <div className="space-y-3 md:w-1/2 text-center md:text-start">
             <p className="text-[#a1a0a0] uppercase">Web Developer</p>
             <h2 className="uppercase font-bold md:text-3xl">
               Md Morshed <br /> Alam
             </h2>
             <p className="text-[#a1a0a0]">
               Junior MERN Stack Developer{" "}
-              <span className="text-warning font-bold">|| </span>Strong in
+              <span className="text-warning font-bold">|| </span>Strong base in
               Frontend. <span className="text-warning font-bold">|| </span>{" "}
               Passionate about creating seamless web experiences with React.js,
               Node.js, Express.js and MongoDB.
             </p>
           </div>
+          <div className="mt-10 md:hidden block flex items-center justify-center">
+            <a
+              href="https://drive.google.com/uc?export=download&id=16YrkBlHZZRajwkfho8kQyXJi37kFaJnJ"
+              download="MorzResume.pdf"
+            >
+              <button className="text-warning font-bold text-lg btn btn-outline hover:border-red-600 hover:bg-white hover:text-black">
+                Resume📤
+              </button>
+            </a>
+          </div>
         </div>
-        <a
-          href="https://drive.google.com/uc?export=download&id=16YrkBlHZZRajwkfho8kQyXJi37kFaJnJ"
-          download="MorzResume.pdf"
-        >
-          <button className="text-warning font-bold text-lg btn btn-outline hover:border-red-600 hover:bg-white hover:text-black">
-            Resume📤
-          </button>
-        </a>
       </div>
 
       {/* right side */}
 
       <div className="md:w-1/2">
-        <div  data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-duration="2000" className="bg-[#161616] rounded-3xl text-warning p-5 shadow-2xl mb-5 uppercase">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-duration="1500"
+          className="bg-[#161616] rounded-3xl text-warning p-5 shadow-2xl mb-5 uppercase"
+        >
           <Marquee>
             * Latest <span className="mx-1 text-white">Work and Featured</span>*
             * Latest <span className="mx-1 text-white">Work and Featured</span>{" "}
@@ -60,9 +75,12 @@ const TopSection = () => {
           </Marquee>
         </div>
 
-        <div  data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-duration="1500" className="flex flex-col md:flex-row gap-5">
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-duration="1500"
+          className="flex flex-col md:flex-row gap-5"
+        >
           <div className="flex flex-col gap-7 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl">
             <div className="flex-grow">
               <img className="" src={signature} alt="signature" />

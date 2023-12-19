@@ -87,20 +87,20 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-5 mt-8">
+        <div className="space-y-5 my-10 md:mt-20">
           <h1 className="uppercase font-bold text-2xl">Social Info</h1>
           <div className="grid grid-cols-3">
             <a
               className=""
               href="https://www.linkedin.com/in/md-morshed-alam-2324022a4/"
             >
-              <FaLinkedin className="text-3xl"></FaLinkedin>
+              <FaLinkedin className="text-3xl hover:text-warning"></FaLinkedin>
             </a>
             <a className="" href="https://www.facebook.com/">
-              <FaFacebookSquare className="text-3xl"></FaFacebookSquare>
+              <FaFacebookSquare className="text-3xl hover:text-warning"></FaFacebookSquare>
             </a>
             <a className="" href="https://github.com/morz-mamun">
-              <FaGithub className="text-3xl"></FaGithub>
+              <FaGithub className="text-3xl hover:text-warning"></FaGithub>
             </a>
           </div>
         </div>
@@ -134,7 +134,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   placeholder="Name*"
-                  className=" text-black input input-bordered w-full"
+                  className=" text-black input input-bordered bg-gray-300 w-full "
                   required
                 />
               </div>
@@ -146,7 +146,7 @@ const Contact = () => {
                   type="email"
                   name="email"
                   placeholder="Email*"
-                  className=" text-black input input-bordered w-full"
+                  className=" text-black bg-gray-300 input input-bordered w-full"
                   required
                 />
               </div>
@@ -158,7 +158,7 @@ const Contact = () => {
                   type="text"
                   name="subject"
                   placeholder="Your Subject*"
-                  className=" text-black input input-bordered w-full"
+                  className=" text-black input input-bordered bg-gray-300 w-full"
                   required
                 />
               </div>
@@ -170,7 +170,7 @@ const Contact = () => {
                   type="text"
                   name="message"
                   placeholder="Your Message*"
-                  className=" text-black input input-bordered w-full"
+                  className=" text-black input input-bordered bg-gray-300 w-full"
                   required
                 />
               </div>
