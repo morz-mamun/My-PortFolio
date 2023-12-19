@@ -4,7 +4,9 @@ import AboutTop from "./AboutTop/AboutTop";
 
 const About = () => {
     return (
-        <div>
+        <div  data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="500">
             <AboutTop></AboutTop>
             <AboutMiddle></AboutMiddle>
         </div>

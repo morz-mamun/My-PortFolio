@@ -1,7 +1,9 @@
 const AboutMiddle = () => {
   return (
     <div className="flex flex-col md:flex-row gap-5 px-5 my-8">
-      <div className="md:w-1/2 p-5 lg:p-8 bg-[#161616] rounded-xl shadow-2xl space-y-5">
+      <div  data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-duration="1500" className="md:w-1/2 p-5 lg:p-8 bg-[#161616] rounded-xl shadow-2xl space-y-5">
         <p className="text-2xl font-bold uppercase text-center">Education</p>
 
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -80,7 +82,9 @@ const AboutMiddle = () => {
           </li>
         </ul>
       </div>
-      <div className="md:w-1/2 p-5 lg:p-8 bg-[#161616] rounded-xl shadow-2xl space-y-5">
+      <div  data-aos="zoom-in"
+        data-aos-offset="300"
+        data-aos-duration="1500" className="md:w-1/2 p-5 lg:p-8 bg-[#161616] rounded-xl shadow-2xl space-y-5">
         <p className="text-2xl font-bold uppercase text-center">Experience</p>
 
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">

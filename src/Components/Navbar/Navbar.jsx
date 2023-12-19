@@ -70,9 +70,11 @@ const Navbar = () => {
             𝕄𝕆ℝ𝕊ℍ𝔼𝔻 <span className="text-warning font-bold">𝔸𝕃𝔸𝕄</span>
           </button>
         </Link>
-        <Link className="hidden md:block" to={"contact"}>
+        <Link data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000"  className="hidden md:block" to={"contact"}>
           <button className="text-warning font-bold text-lg btn btn-sm btn-outline hover:border-red-600 hover:bg-white hover:text-black">
-            Lets Talk
+            Let's Talk
           </button>
         </Link>
       </div>
