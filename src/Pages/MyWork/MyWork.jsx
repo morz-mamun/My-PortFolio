@@ -9,7 +9,7 @@ const MyWork = () => {
       data-aos-duration="500"
       className="px-5 my-8"
     >
-      <h1 className="text-center my-8 text-5xl font-bold uppercase">My Work</h1>
+      <h1 className="text-center my-8 text-5xl font-bold uppercase">My Works</h1>
       <div
         data-aos="fade-right"
         data-aos-offset="300"

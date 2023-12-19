@@ -34,10 +34,12 @@ const TopSection = () => {
             </div>
           </figure>
           <div className="space-y-3 md:w-1/2 text-center md:text-start">
-            <p className="text-[#a1a0a0] uppercase">Web Developer</p>
-            <h2 className="uppercase font-bold md:text-3xl">
-              Md Morshed <br /> Alam
+           <div className="space-y-3">
+             <p className="text-[#a1a0a0] uppercase">Web Developer</p>
+            <h2 className="uppercase text-lg font-bold md:text-3xl">
+              Md Morshed Alam
             </h2>
+           </div>
             <p className="text-[#a1a0a0]">
               Junior MERN Stack Developer{" "}
               <span className="text-warning font-bold">|| </span>Strong base in
