@@ -5,11 +5,15 @@ import signature from "../../assets/sig.png";
 import project from "../../assets/sig1.png";
 import { Link } from "react-router-dom";
 
-
 const TopSection = () => {
   return (
     <div className="flex flex-col md:flex-row gap-10 px-5 mt-16">
-      <div className="md:w-1/2 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-duration="2000"
+        className="md:w-1/2 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl"
+      >
         <div className="flex flex-col md:flex-row gap-2 lg:gap-10 ">
           <figure className="md:w-1/2 flex justify-center ">
             <img
@@ -33,17 +37,22 @@ const TopSection = () => {
             </p>
           </div>
         </div>
-        <a href="https://drive.google.com/uc?export=download&id=16YrkBlHZZRajwkfho8kQyXJi37kFaJnJ" download="MorzResume.pdf"><button className="text-warning font-bold text-lg btn btn-outline hover:border-red-600 hover:bg-white hover:text-black">
+        <a
+          href="https://drive.google.com/uc?export=download&id=16YrkBlHZZRajwkfho8kQyXJi37kFaJnJ"
+          download="MorzResume.pdf"
+        >
+          <button className="text-warning font-bold text-lg btn btn-outline hover:border-red-600 hover:bg-white hover:text-black">
             Resume📤
-          </button></a>
+          </button>
+        </a>
       </div>
 
-      
-     
       {/* right side */}
 
       <div className="md:w-1/2">
-        <div className="bg-[#161616] rounded-3xl text-warning p-5 shadow-2xl mb-5 uppercase">
+        <div  data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-duration="2000" className="bg-[#161616] rounded-3xl text-warning p-5 shadow-2xl mb-5 uppercase">
           <Marquee>
             * Latest <span className="mx-1 text-white">Work and Featured</span>*
             * Latest <span className="mx-1 text-white">Work and Featured</span>{" "}
@@ -51,7 +60,9 @@ const TopSection = () => {
           </Marquee>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-5">
+        <div  data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-duration="1500" className="flex flex-col md:flex-row gap-5">
           <div className="flex flex-col gap-7 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl">
             <div className="flex-grow">
               <img className="" src={signature} alt="signature" />
