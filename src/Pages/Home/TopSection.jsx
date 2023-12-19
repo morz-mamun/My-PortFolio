@@ -14,7 +14,7 @@ const TopSection = () => {
         data-aos-duration="2000"
         className="md:w-1/2 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl"
       >
-        <div className="flex flex-col md:flex-row gap-2 lg:gap-10 ">
+        <div className="flex flex-col md:flex-row gap-2 lg:gap-5 ">
           <figure className="md:w-1/2 flex flex-col justify-center items-center">
             <img
               className="h-52 md:w-fit rounded-xl shadow-2xl bg-gradient-to-r from-slate-600  via-slate-200

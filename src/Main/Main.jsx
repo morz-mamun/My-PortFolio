@@ -11,7 +11,7 @@ const Main = () => {
       data-aos="fade-down"
       data-aos-easing="linear"
       data-aos-duration="1000"
-      className="max-w-screen-xl mx-auto"
+      className="max-w-screen-xl mx-auto overflow-hidden"
     >
       <Navbar></Navbar>
       <Outlet></Outlet>

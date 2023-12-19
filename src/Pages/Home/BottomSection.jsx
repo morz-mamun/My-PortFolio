@@ -9,19 +9,19 @@ const BottomSection = () => {
         data-aos="fade-right"
         data-aos-offset="300"
         data-aos-duration="1500"
-        className="md:w-1/2 grid grid-cols-3 gap-1 md:gap-5 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl"
+        className="md:w-1/2 grid grid-cols-3 gap-1 md:gap-5 p-2 lg:p-10 bg-[#161616] rounded-xl shadow-2xl"
       >
-        <div className="bg-[#202020] p-1 md:p-4 rounded-xl text-center space-y-3">
+        <div className="bg-[#202020] p-2 md:p-4 rounded-xl text-center space-y-3">
           <h2 className="text-3xl font-bold">02</h2>
-          <p className="text-[#a1a0a0]">Experience Years</p>
+          <p className="text-[#a1a0a0] text-sm md:text-base">Experience Years</p>
         </div>
-        <div className="bg-[#202020] p-1 md:p-4 rounded-xl text-center space-y-3">
+        <div className="bg-[#202020] p-2 md:p-4 rounded-xl text-center space-y-3">
           <h2 className="text-2xl font-bold">00</h2>
-          <p className="text-[#a1a0a0] ">WorldWide Clients</p>
+          <p className="text-sm md:text-base text-[#a1a0a0] ">WorldWide Clients</p>
         </div>
-        <div className="bg-[#202020] p-1 md:p-4 rounded-xl text-center space-y-3">
+        <div className="bg-[#202020] p-2 md:p-4 rounded-xl text-center space-y-3">
           <h2 className="text-2xl font-bold">22</h2>
-          <p className="text-[#a1a0a0]">Total Projects</p>
+          <p className="text-sm md:text-base text-[#a1a0a0]">Total Projects</p>
         </div>
       </div>
       {/* right side */}

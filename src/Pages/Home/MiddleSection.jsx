@@ -1,4 +1,4 @@
-import { FaArrowRightFromBracket, FaGithub } from "react-icons/fa6";
+import { FaArrowRightFromBracket} from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import html from "../../assets/HTML.svg";
 import css from "../../assets/CSS.svg";
