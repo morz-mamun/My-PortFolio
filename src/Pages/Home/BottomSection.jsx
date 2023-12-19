@@ -35,7 +35,7 @@ const BottomSection = () => {
         </h1>
         <div className="flex justify-end">
           <Link to={"/contact"}>
-            <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-red-600"></FaArrowRightFromBracket>
+            <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-warning"></FaArrowRightFromBracket>
           </Link>
         </div>
       </div>

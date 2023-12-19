@@ -2,6 +2,7 @@ import emailjs from "@emailjs/browser";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import Swal from "sweetalert2";
+import { MdContactPhone, MdLocationOn } from "react-icons/md";
 
 const Contact = () => {
   const Toast = Swal.mixin({
@@ -57,39 +58,39 @@ const Contact = () => {
       >
         <div className="space-y-5">
           <h1 className="uppercase font-bold text-2xl">Contact Info</h1>
-          <div className="flex gap-5">
-            <div className="p-3 bg-[#161616] rounded-xl shadow-2xl space-y-5 text-5xl">
-              📩
+          <div className="flex gap-5 items-center">
+            <div className="p-2 bg-[#161616] rounded-xl shadow-2xl space-y-5">
+            <img width="30" height="30" src="https://img.icons8.com/emoji/48/e-mail.png" alt="e-mail"/>
             </div>
             <div>
               <p className="text-[#a1a0a0]">MAIL</p>
               <a href="">morzmamun@gmail.com</a>
             </div>
           </div>
-          <div className="flex gap-5">
-            <div className="p-3 bg-[#161616] rounded-xl shadow-2xl space-y-5 text-5xl">
-              📲
+          <div className="flex gap-5 items-center">
+            <div className="p-2 bg-[#161616] rounded-xl shadow-2xl h-12 flex items-center justify-center text-3xl">
+              <MdContactPhone></MdContactPhone>
             </div>
             <div>
-              <p className="text-[#a1a0a0]">Contact Number</p>
+              <p className="text-[#a1a0a0] uppercase">Contact Number</p>
               <p>
                 +8801851-565648 <br /> +8801860-015052
               </p>
             </div>
           </div>
           <div className="flex gap-5">
-            <div className="p-3 bg-[#161616] rounded-xl shadow-2xl space-y-5 text-5xl">
-              🌍
+            <div className="p-2 bg-[#161616] rounded-xl shadow-2xl text-3xl">
+            <MdLocationOn></MdLocationOn>
             </div>
             <div>
-              <p className="text-[#a1a0a0]">Location</p>
+              <p className="text-[#a1a0a0] uppercase">Location</p>
               <p>Chattogram, Bangladesh.</p>
             </div>
           </div>
         </div>
         <div className="space-y-5 my-10 md:mt-20">
           <h1 className="uppercase font-bold text-2xl">Social Info</h1>
-          <div className="grid grid-cols-3">
+          <div className="flex justify-center items-center gap-10">
             <a
               className=""
               href="https://www.linkedin.com/in/md-morshed-alam-2324022a4/"

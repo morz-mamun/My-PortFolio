@@ -26,7 +26,7 @@ const AboutTop = () => {
           <h1></h1>
           <h1 className="font-bold text-3xl">Md Morshed Alam Mamun</h1>
           <p>
-            I A junior MERN Stack Developer. I have experience building web
+            I'm junior MERN Stack Developer. I have experience building web
             applications using MongoDB, Express.js, React.js, and Node.js. I am
             passionate about creating user-friendly and responsive web
             applications.I am always looking for opportunities to learn and grow

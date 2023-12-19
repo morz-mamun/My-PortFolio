@@ -4,6 +4,7 @@ import bg from "../../assets/bg.png";
 import signature from "../../assets/sig.png";
 import project from "../../assets/sig1.png";
 import { Link } from "react-router-dom";
+import { FaDownload } from "react-icons/fa";
 
 const TopSection = () => {
   return (
@@ -27,8 +28,8 @@ const TopSection = () => {
                 href="https://drive.google.com/uc?export=download&id=16YrkBlHZZRajwkfho8kQyXJi37kFaJnJ"
                 download="MorzResume.pdf"
               >
-                <button className="text-warning font-bold text-lg btn btn-outline hover:border-red-600 hover:bg-white hover:text-black">
-                  Resume📤
+                <button className="text-warning font-bold text-lg btn btn-outline hover:border-warning hover:bg-white hover:text-black">
+                  Resume <FaDownload></FaDownload>
                 </button>
               </a>
             </div>
@@ -94,7 +95,7 @@ const TopSection = () => {
               </p>
               <div className="flex justify-end">
                 <Link to={"/about"}>
-                  <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-red-600"></FaArrowRightFromBracket>
+                  <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-warning"></FaArrowRightFromBracket>
                 </Link>
               </div>
             </div>
@@ -110,7 +111,7 @@ const TopSection = () => {
               </p>
               <div className="flex justify-end">
                 <Link to={"/myWork"}>
-                  <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-red-600"></FaArrowRightFromBracket>
+                  <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-warning"></FaArrowRightFromBracket>
                 </Link>
               </div>
             </div>

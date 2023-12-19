@@ -4,18 +4,27 @@ import "./navStyle.css";
 const Navbar = () => {
   const navLinks = (
     <>
-      <li className="font-bold">
-        <NavLink to={"/"}>Home</NavLink>
+      <NavLink className={({isActive}) => isActive? "bg-warning text-black rounded-lg px-3 py-2 mr-5" : "mr-5 hover:text-warning px-3 py-2" } to={"/"}> Home
+      </NavLink>
+      <NavLink className={({isActive}) => isActive? "bg-warning text-black rounded-lg px-3 py-2 mr-5" : " mr-5 hover:text-warning px-3 py-2" } to={"about"}> about
+      </NavLink>
+      <NavLink className={({isActive}) => isActive? "bg-warning text-black rounded-lg px-3 py-2 mr-5" : "mr-5 hover:text-warning px-3 py-2" } to={"/myWork"}> Works
+      </NavLink>
+      <NavLink className={({isActive}) => isActive? "bg-warning text-black rounded-lg px-3 py-2 mr-5" : "mr-5 hover:text-warning px-3 py-2" } to={"/contact"}> Contact
+      </NavLink>
+      {/* <li className="hover:text-warning uppercase">
+       
+      </li> */}
+       {/* <NavLink className={({isActive}) => isActive ? activeLink : "" } to={"/about"}>About</NavLink>
+      <li className="hover:text-warning uppercase">
+       
       </li>
-      <li className="font-bold">
-        <NavLink to={"/about"}>About</NavLink>
-      </li>
-      <li className="font-bold">
+      <li className="hover:text-warning uppercase">
         <NavLink to={"/myWork"}>Works</NavLink>
       </li>
-      <li className="font-bold">
+      <li className="hover:text-warning uppercase">
         <NavLink to={"/contact"}>Contact</NavLink>
-      </li>
+      </li> */}
     </>
   );
   return (
@@ -50,9 +59,9 @@ const Navbar = () => {
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="3000"
-            className="hover:text-red-600"
+            className="hover:text-white text-warning"
           >
-            𝕄𝕆ℝ𝕊ℍ𝔼𝔻 <span className="text-warning font-bold">𝔸𝕃𝔸𝕄</span>
+            𝕄𝕆ℝ𝕊ℍ𝔼𝔻 𝔸𝕃𝔸𝕄
           </button>
         </Link>
       </div>

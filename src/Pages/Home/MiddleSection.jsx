@@ -1,4 +1,4 @@
-import { FaArrowRightFromBracket} from "react-icons/fa6";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import html from "../../assets/HTML.svg";
 import css from "../../assets/CSS.svg";
@@ -8,6 +8,7 @@ import mongodb from "../../assets/MongoDB.svg";
 import tailwind from "../../assets/TailwindCSS-Dark.svg";
 import Marquee from "react-fast-marquee";
 import Cart from "./Cart";
+import coding from "../../assets/coding.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,10 +25,7 @@ const MiddleSection = () => {
       >
         <div className="space-y-2">
           <p className="text-[#a1a0a0] uppercase">Specialization</p>
-          <h2
-           className="uppercase font-bold md:text-2xl">
-            My Skills
-          </h2>
+          <h2 className="uppercase font-bold md:text-2xl">My Skills</h2>
         </div>
         <figure className="">
           <div className="bg-[#161616] rounded-3xl shadow-2xl my-2">
@@ -50,13 +48,21 @@ const MiddleSection = () => {
         </figure>
       </div>
 
-        {/* right side */}
-      <div  data-aos="zoom-in"
+      {/* right side */}
+      <div
+        data-aos="zoom-in"
         data-aos-offset="300"
-        data-aos-duration="1500" className="md:w-1/4 flex flex-col gap-8 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl">
+        data-aos-duration="1500"
+        className="md:w-1/4 flex flex-col gap-8 p-5 lg:p-10 bg-[#161616] rounded-xl shadow-2xl"
+      >
         <SocialLink></SocialLink>
         <p className="text-[#a1a0a0 uppercase">Stay With Me</p>
-        <p className="font-bold text-2xl">Profile</p>
+        <div className="flex justify-between items-center">
+          <p className="font-bold text-2xl uppercase">Profile</p>
+          <div className="w-16 rounded-full p-1">
+            <img className="bg-white rounded-full " src={coding} alt="" />
+          </div>
+        </div>
         <div className="flex justify-end">
           <Link to={"/about"}>
             <FaArrowRightFromBracket className="text-3xl text-[#5c5b5b] hover:text-warning"></FaArrowRightFromBracket>

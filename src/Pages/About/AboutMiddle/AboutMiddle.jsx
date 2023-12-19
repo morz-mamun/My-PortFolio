@@ -51,7 +51,6 @@ const AboutMiddle = () => {
               <time className="font-mono italic">2018</time>
               <div className="text-lg font-black">College</div>
              Islamia Degree College Chittagong. <br />
-             Grad: A-
             </div>
             <hr />
           </li>
@@ -76,7 +75,6 @@ const AboutMiddle = () => {
               <div className="text-lg font-black">High School
               </div>
           Govt.Muslim High School. <br />
-           Grad: A+
             </div>
             <hr /> 
           </li>
