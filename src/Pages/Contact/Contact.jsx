@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { FaFacebookSquare } from "react-icons/fa";
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaArrowRightFromBracket } from "react-icons/fa6";
 import Swal from "sweetalert2";
 import { MdContactPhone, MdLocationOn } from "react-icons/md";
 
@@ -43,6 +43,7 @@ const Contact = () => {
       );
     form.reset();
   };
+
   return (
     <div
       data-aos="fade-down"
@@ -50,6 +51,7 @@ const Contact = () => {
       data-aos-duration="500"
       className="flex flex-col md:flex-row gap-5 px-5 my-12"
     >
+      {/* left side */}
       <div
         data-aos="fade-right"
         data-aos-offset="300"
@@ -60,7 +62,12 @@ const Contact = () => {
           <h1 className="uppercase font-bold text-2xl">Contact Info</h1>
           <div className="flex gap-5 items-center">
             <div className="p-2 bg-[#161616] rounded-xl shadow-2xl space-y-5">
-            <img width="30" height="30" src="https://img.icons8.com/emoji/48/e-mail.png" alt="e-mail"/>
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/emoji/48/e-mail.png"
+                alt="e-mail"
+              />
             </div>
             <div>
               <p className="text-[#a1a0a0]">MAIL</p>
@@ -80,7 +87,7 @@ const Contact = () => {
           </div>
           <div className="flex gap-5">
             <div className="p-2 bg-[#161616] rounded-xl shadow-2xl text-3xl">
-            <MdLocationOn></MdLocationOn>
+              <MdLocationOn></MdLocationOn>
             </div>
             <div>
               <p className="text-[#a1a0a0] uppercase">Location</p>
@@ -127,8 +134,18 @@ const Contact = () => {
           </div>
           <div className="w-full text-white">
             <form onSubmit={handleSubmit}>
-              <div className="form-control">
-                <label className="label">
+              <div className="relative z-0 mb-5">
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  className="peer block w-full appearance-none border-0 border-b  bg-transparent py-2.5 px-0 text-sm text-white focus:border-warning focus:outline-none focus:ring-0"
+                  placeholder=" "
+                />
+                <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform  text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-warning">
+                  Your name *
+                </label>
+                {/* <label className="label">
                   <span className="text-white font-bold">Name</span>
                 </label>
                 <input
@@ -137,10 +154,20 @@ const Contact = () => {
                   placeholder="Name*"
                   className=" text-black input input-bordered bg-gray-300 w-full "
                   required
-                />
+                /> */}
               </div>
-              <div className="form-control ">
-                <label className="label">
+              <div className="relative z-0 mb-5">
+                <input
+                  type="text"
+                  name="email"
+                  required
+                  className="peer block w-full appearance-none border-0 border-b bg-transparent py-2.5 px-0 text-sm text-white focus:border-warning focus:outline-none focus:ring-0"
+                  placeholder=" "
+                />
+                <label className="absolute  top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform  text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-warning">
+                  Your email *
+                </label>
+                {/* <label className="label">
                   <span className="text-white font-bold">Email</span>
                 </label>
                 <input
@@ -149,10 +176,20 @@ const Contact = () => {
                   placeholder="Email*"
                   className=" text-black bg-gray-300 input input-bordered w-full"
                   required
-                />
+                /> */}
               </div>
-              <div className="form-control ">
-                <label className="label">
+              <div className="relative z-0 mb-5">
+              <input
+                    type="text"
+                    name="subject"
+                    required
+                    className="peer block w-full appearance-none border-0 border-b bg-transparent py-2.5 px-0 text-sm text-white focus:border-warning focus:outline-none focus:ring-0"
+                    placeholder=" "
+                  />
+                  <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-warning">
+                    Your Subject *
+                  </label>
+                {/* <label className="label">
                   <span className="text-white font-bold">Your Subject</span>
                 </label>
                 <input
@@ -161,10 +198,19 @@ const Contact = () => {
                   placeholder="Your Subject*"
                   className=" text-black input input-bordered bg-gray-300 w-full"
                   required
-                />
+                /> */}
               </div>
-              <div className="form-control ">
-                <label className="label">
+              <div className="relative z-0 mb-5">
+              <textarea
+                    name="message"
+                    rows="3"
+                    className="peer block w-full appearance-none border-0 border-b bg-transparent py-2.5 px-0 text-sm text-white focus:border-warning focus:outline-none focus:ring-0"
+                    placeholder=" "
+                  ></textarea>
+                  <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-warning">
+                    Your message
+                  </label>
+                {/* <label className="label">
                   <span className="text-white font-bold">Message</span>
                 </label>
                 <textarea
@@ -173,15 +219,15 @@ const Contact = () => {
                   placeholder="Your Message*"
                   className=" text-black input input-bordered bg-gray-300 w-full"
                   required
-                />
+                /> */}
               </div>
 
               <div className="form-control mt-6">
                 <button
                   type="submit"
-                  className="btn btn-outline text-warning hover:border-red-600 hover:bg-white hover:text-black w-1/2 mx-auto"
+                  className="btn btn-outline border-b-2 text-warning hover:border-red-600 hover:bg-white hover:text-black w-1/2 mx-auto"
                 >
-                  Send Message
+                  Send Message <FaArrowRightFromBracket />
                 </button>
               </div>
             </form>
