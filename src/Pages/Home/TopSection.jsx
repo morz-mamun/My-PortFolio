@@ -6,6 +6,7 @@ import project from "../../assets/sig1.png";
 import { Link } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+import resumePdf from "../../../public/MorshedResume.pdf";
 
 const TopSection = () => {
   return (
@@ -26,8 +27,10 @@ const TopSection = () => {
             />
             <div className="mt-6 hidden md:block">
               <a
-                href="https://drive.google.com/uc?export=download&id=16YrkBlHZZRajwkfho8kQyXJi37kFaJnJ"
-                download="MorzResume.pdf"
+                href='https://drive.google.com/uc?export=download&id=1AkFdQ6O-7TtZ3GtkUKTeJIXSk1qswyKk'
+                download="resume-PDF-document"
+                target="_blank"
+                rel="noreferrer"
               >
                 <button className="text-warning font-bold text-lg btn btn-outline hover:border-warning hover:bg-white hover:text-black">
                   Resume <FaDownload></FaDownload>
@@ -36,20 +39,19 @@ const TopSection = () => {
             </div>
           </figure>
           <div className="space-y-3 md:w-1/2 text-center md:text-start">
-           <div className="space-y-3">
-             <p className="text-[#a1a0a0] uppercase">Web Developer</p>
-            <h2 className="uppercase text-lg font-bold md:text-3xl">
-            <Typewriter 
-            words={["Md Morshed Alam"]}
-            loop={0}
-            cursor
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1500}
-          />
-             
-            </h2>
-           </div>
+            <div className="space-y-3">
+              <p className="text-[#a1a0a0] uppercase">Web Developer</p>
+              <h2 className="uppercase text-lg font-bold md:text-3xl">
+                <Typewriter
+                  words={["Md Morshed Alam"]}
+                  loop={0}
+                  cursor
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1500}
+                />
+              </h2>
+            </div>
             <p className="text-[#a1a0a0]">
               Junior MERN Stack Developer{" "}
               <span className="text-warning font-bold">|| </span>Strong base in
