@@ -8,7 +8,7 @@ const Navbar = () => {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "bg-warning text-black rounded-ss-2xl rounded-ee-2xl px-3 py-2 mr-5"
+            ? "bg-warning text-black shadow-2xl rounded-ss-2xl rounded-ee-2xl px-3 py-2 mr-5 animate-pulse"
             : "mr-5 hover:text-warning px-3 py-2"
         }
         to={"/"}
@@ -19,7 +19,7 @@ const Navbar = () => {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "bg-warning text-black rounded-ss-2xl rounded-ee-2xl px-3 py-2 mr-5"
+            ? "bg-warning text-black shadow-2xl rounded-ss-2xl rounded-ee-2xl px-3 py-2 mr-5 animate-pulse"
             : " mr-5 hover:text-warning px-3 py-2"
         }
         to={"about"}
@@ -30,7 +30,7 @@ const Navbar = () => {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "bg-warning text-black rounded-ss-2xl rounded-ee-2xl px-3 py-2 mr-5"
+            ? "bg-warning text-black shadow-2xl rounded-ss-2xl rounded-ee-2xl px-3 py-2 mr-5 animate-pulse"
             : "mr-5 hover:text-warning px-3 py-2"
         }
         to={"/myWork"}
@@ -41,7 +41,7 @@ const Navbar = () => {
       <NavLink
         className={({ isActive }) =>
           isActive
-            ? "bg-warning text-black rounded-ss-2xl rounded-ee-2xl px-3 py-2 mr-5"
+            ? "bg-warning text-black shadow-2xl rounded-ss-2xl rounded-ee-2xl px-3 py-2 mr-5 animate-pulse"
             : "mr-5 hover:text-warning px-3 py-2"
         }
         to={"/contact"}
