@@ -5,6 +5,7 @@ import signature from "../../assets/sig.png";
 import project from "../../assets/sig1.png";
 import { Link } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
+import { Typewriter } from "react-simple-typewriter";
 
 const TopSection = () => {
   return (
@@ -38,7 +39,16 @@ const TopSection = () => {
            <div className="space-y-3">
              <p className="text-[#a1a0a0] uppercase">Web Developer</p>
             <h2 className="uppercase text-lg font-bold md:text-3xl">
-              Md Morshed Alam
+            <Typewriter 
+            words={["Md Morshed Alam"]}
+            loop={0}
+            cursor
+            cursorColor="yellow"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1500}
+          />
+             
             </h2>
            </div>
             <p className="text-[#a1a0a0]">
