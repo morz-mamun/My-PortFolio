@@ -43,7 +43,6 @@ const TopSection = () => {
             words={["Md Morshed Alam"]}
             loop={0}
             cursor
-            cursorColor="yellow"
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={1500}
