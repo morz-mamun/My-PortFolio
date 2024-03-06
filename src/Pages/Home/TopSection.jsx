@@ -1,16 +1,18 @@
 import Marquee from "react-fast-marquee";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import bg from "../../assets/bg.png";
-import signature from "../../assets/sig.png";
+import signature from "../../assets/signature.png";
+
 import project from "../../assets/sig1.png";
 import { Link } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
-import resumePdf from "../../../public/MorshedResume.pdf";
+
 
 const TopSection = () => {
   return (
     <div className="flex flex-col md:flex-row gap-10 px-5 mt-16">
+      {/* left side */}
       <div
         data-aos="fade-right"
         data-aos-offset="300"
@@ -27,7 +29,7 @@ const TopSection = () => {
             />
             <div className="mt-6 hidden md:block">
               <a
-                href='https://drive.google.com/uc?export=download&id=1AkFdQ6O-7TtZ3GtkUKTeJIXSk1qswyKk'
+                href='https://drive.google.com/uc?export=download&id=1la6ySNpZgw2VTGaHqNQ0-Szhvrc9EEJw'
                 download="resume-PDF-document"
                 target="_blank"
                 rel="noreferrer"
@@ -83,8 +85,8 @@ const TopSection = () => {
           className="bg-[#161616] rounded-3xl text-warning p-5 shadow-2xl mb-5 uppercase"
         >
           <Marquee>
-            * Latest <span className="mx-1 text-white">Work and Featured</span>*
-            * Latest <span className="mx-1 text-white">Work and Featured</span>{" "}
+            * Latest <span className="mx-1 text-white"> Work and Featured</span>*
+            * Latest <span className="mx-1 text-white"> Work and Featured</span>{" "}
             *
           </Marquee>
         </div>
