@@ -97,7 +97,7 @@ const Contact = () => {
         </div>
         <div className="space-y-5 my-10 md:mt-20">
           <h1 className="uppercase font-bold text-2xl">Social Info</h1>
-          <div className="flex justify-center items-center gap-10">
+          <div className="flex gap-10">
             <a
               className=""
               href="https://www.linkedin.com/in/md-morshed-alam-2324022a4/"
@@ -179,16 +179,16 @@ const Contact = () => {
                 /> */}
               </div>
               <div className="relative z-0 mb-5">
-              <input
-                    type="text"
-                    name="subject"
-                    required
-                    className="peer block w-full appearance-none border-0 border-b bg-transparent py-2.5 px-0 text-sm text-white focus:border-warning focus:outline-none focus:ring-0"
-                    placeholder=" "
-                  />
-                  <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-warning">
-                    Your Subject *
-                  </label>
+                <input
+                  type="text"
+                  name="subject"
+                  required
+                  className="peer block w-full appearance-none border-0 border-b bg-transparent py-2.5 px-0 text-sm text-white focus:border-warning focus:outline-none focus:ring-0"
+                  placeholder=" "
+                />
+                <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-warning">
+                  Your Subject *
+                </label>
                 {/* <label className="label">
                   <span className="text-white font-bold">Your Subject</span>
                 </label>
@@ -201,15 +201,15 @@ const Contact = () => {
                 /> */}
               </div>
               <div className="relative z-0 mb-5">
-              <textarea
-                    name="message"
-                    rows="3"
-                    className="peer block w-full appearance-none border-0 border-b bg-transparent py-2.5 px-0 text-sm text-white focus:border-warning focus:outline-none focus:ring-0"
-                    placeholder=" "
-                  ></textarea>
-                  <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-warning">
-                    Your message
-                  </label>
+                <textarea
+                  name="message"
+                  rows="3"
+                  className="peer block w-full appearance-none border-0 border-b bg-transparent py-2.5 px-0 text-sm text-white focus:border-warning focus:outline-none focus:ring-0"
+                  placeholder=" "
+                ></textarea>
+                <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-warning">
+                  Your message
+                </label>
                 {/* <label className="label">
                   <span className="text-white font-bold">Message</span>
                 </label>
